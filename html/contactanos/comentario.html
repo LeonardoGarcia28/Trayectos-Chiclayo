@@ -5,14 +5,375 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Dejanos un comentario</title>
         <link rel="stylesheet" href="../../css/contactanos/comentario.css">
-        <script src="../../js/comentario.js"></script>
         <link rel="icon" type="image/png" href="../../icon/comentario.png">
+        <script src="../../js/contactanos/comentario.js"></script>
     </head>
     <body>
-        <div class="">
-            <h1>Dejanos un comentario</h1>
-            <textarea class="" name="" id=""></textarea>
-            <button class="">Submit</button>
+        <header>
+            <div class="headerInicial">
+                <div class="logoHeader">
+                    <img src="../../icon/trayectosChiclayoIcon.png" id="logoHeader">
+                </div>
+                <div class="tituloHeader">
+                    <div class="primerTituloHeader">
+                        <a href="" target="_blank"><label id="primerTituloHeader">Revista Trayectos</label></a>
+                    </div>
+                    <div class="barraSeparadora">
+                        <a href="" target="_blank"><label id="barraSeparadora">|</label></a>
+                    </div>
+                    <div class="segundoTituloHeader">
+                        <a href="" target="_blank"><label id="segundoTituloHeader">¡Sigue nuestros pasos!</label></a>
+                    </div>
+                </div>
+                <div class="iconosHeader">
+                    <div class="buscadorLupa">
+                        <input type="text" id="textoBuscador" name="textoBuscador" placeholder="">
+                        <div class="iconoLupa">
+                            <i class="fi fi-bs-search" id="iconoLupa"></i>
+                        </div>
+                    </div>
+                    <div class="iconoUsuarioHeader">
+                        <i class="fi fi-ss-user" id="iconoUsuarioHeader"></i>
+                    </div>
+                    <div class="iconoCorazonHeader">
+                        <i class="fi fi-ss-heart" id="iconoCorazonHeader"></i>
+                    </div>
+                    <div class="iconoBurgerHeader">
+                        <i class="fi fi-ss-menu-burger" id="iconoBurgerHeader"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="subHeader">
+                <a href="" target="_blank"><label id="inicioSubHeader">INICIO</label></a>
+                <a href="" target="_blank"><label id="sobreNosotrosSubHeader">SOBRE NOSOTROS</label></a>
+                <a href="" target="_blank"><label id="revistasSubHeader">REVISTAS</label></a>
+                <a href="" target="_blank"><label id="contactoSubHeader">CONTACTO</label></a>
+                <a href="" target="_blank"><label id="escribenosSubHeader">ESCRIBENOS</label></a>
+                <a href="" target="_blank"><label id="registrateSubHeader">REGISTRATE</label></a>
+            </div>
+        </header>
+        <div class="general">
+            <fieldset class="primerFieldset">
+                <div class="tituloFieldset">
+                    <h1>Dejanos un comentario</h1>
+                </div>
+                <form method="post">
+                    <div class="formulario">
+                        <div class="campoCorreo">
+                            <div class="labelCorreo">
+                                <label for="correoIngresado">Ingresar correo electronico:</label>
+                                <label for="correoIngresado" id="campoObligatorio" title="Este campo es obligatorio"> *</label>
+                            </div>
+                            <div class="inputCorreoGeneral">
+                                <div class="iconoCorreo">
+                                    <i class="fi fi-ss-envelope" id="iconoCorreo"></i>
+                                </div>
+                                <div class="correoIngresadoGeneral">
+                                    <input type="text" name="correoIngresadoGeneral" id="correoIngresadoGeneral" autocomplete="off" placeholder="Ingresar correo" required>
+                                    <div class="seleccionCorreo">
+                                        <label for="seleccionCorreo">@</label>
+                                        <select name="seleccionCorreo" id="seleccionCorreo" required>
+                                            <option value="default" disabled selected>-- Correo --</option>
+                                            <option value="hotmail">Hotmail</option>
+                                            <option value="gmail">Gmail</option>
+                                            <option value="outlook">Outlook</option>
+                                            <option value="yahoo">Yahoo</option>
+                                            <option value="icloud">iCloud</option>
+                                        </select>
+                                    </div>
+                                    <div class="seleccionCorreo">
+                                        <label for="seleccionTerminacion">.</label>
+                                        <select name="seleccionTerminacion" id="seleccionTerminacion" required>
+                                            <option value="default" disabled selected>-- Terminacion --</option>
+                                            <option value="com">com</option>
+                                            <option value="es">es</option>
+                                            <option value="net">net</option>
+                                            <option value="org">org</option>
+                                            <option value="edu.pe">edu.pe</option>
+                                            <option value="gob.pe">gob.pe</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="verificacionCorreo">
+                                    <i class="fi fi-rr-check-circle" id="verificacionCorreo"></i>   
+                                </div>
+                            </div>
+                            <div class="comentarioCorreo">
+                                <label style="color: transparent;">Comentario Default</label>
+                            </div>
+                        </div>
+                        <div class="campoCalificacion">
+                            <div class="labelCalificacion">
+                                <label for="primeraEstrellaCalificacion">Calificar pagina web:</label>
+                                <label for="primeraEstrellaCalificacion" id="campoObligatorio" title="Este campo es obligatorio"> *</label>
+                            </div>
+                            <div class="inputCalificacion">
+                                <div class="parteIzquierdaCalificacion">
+                                    <div class="iconoCalificacion">
+                                        <i class="fi fi-ss-circle-star" id="iconoCalificacion"></i>
+                                    </div>
+                                    <div class="estrellasCalificacion">
+                                        <i class="fi fi-ss-star" id="primeraEstrellaCalificacion" name="primeraEstrellaCalificacion" onclick="primeraEstrella()"></i>
+                                        <i class="fi fi-ss-star" id="segundaEstrellaCalificacion" name="segundaEstrellaCalificacion" onclick="segundaEstrella()"></i>
+                                        <i class="fi fi-ss-star" id="terceraEstrellaCalificacion" name="terceraEstrellaCalificacion" onclick="terceraEstrella()"></i>
+                                        <i class="fi fi-ss-star" id="cuartaEstrellaCalificacion" name="cuartaEstrellaCalificacion" onclick="cuartaEstrella()"></i>
+                                        <i class="fi fi-ss-star" id="quintaEstrellaCalificacion" name="quintaEstrellaCalificacion" onclick="quintaEstrella()"></i>
+                                    </div>
+                                    <div class="limpiarCalificacion">
+                                        <button type="button" id="limpiarCalificacion" name="limpiarCalificacion" onclick="limpiarCalificacion()">Limpiar calificacion</button>
+                                    </div>
+                                </div>
+                                <div class="verificacionCalificacion">
+                                    <i class="fi fi-rr-check-circle" id="verificacionCalificacion"></i>   
+                                </div>
+                            </div>
+                            <div class="comentarioCalificacion">
+                                <label style="color: transparent;">Comentario Default</label>
+                            </div>
+                        </div>
+                        <div class="campoComentario">
+                            <div class="labelComentario">
+                                <label for="comentarioIngresado">Ingresar comentario:</label>
+                                <label for="comentarioIngresado" id="campoObligatorio" title="Este campo es obligatorio"> *</label>
+                            </div>
+                            <div class="inputComentario">
+                                <div class="iconoComentario">
+                                    <i class="fi fi-ss-comment-alt" id="iconoComentario"></i>
+                                </div>
+                                <div class="inputTextArea">
+                                    <textarea name="comentarioIngresado" id="comentarioIngresado" placeholder="Ingresar comentario" autocomplete="off" onchange="" maxlength="255" required></textarea>
+                                </div>
+                                <div class="verificacionComentario">
+                                    <i class="fi fi-rr-check-circle" id="verificacionComentario"></i>
+                                </div>
+                            </div>
+                            <div class="pieComentario">
+                                <div class="opcionesComentarios">
+                                    <div class="limpiarTextArea">
+                                        <button type="button" id="limpiarTextArea" name="limpiarTextArea" onclick="limpiarTextArea()">Limpiar texto</button>
+                                    </div>
+                                    <div class="contadorPalabras">
+                                        <label>Cantidad de caracteres: </label>
+                                        <label id="cantidadPalabras"></label>
+                                        <label> caracteres.</label>
+                                    </div>
+                                </div>
+                                <div class="comentarioTextArea">
+                                    <label style="color: transparent;">Comentario Default</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="barraProgreso">
+                            <label>Progreso del envio del comentario: </label>
+                            <div class="barrasProgreso" id="barrasProgreso">
+                                <button id="primer-progreso"></button>
+                                <button id="segundo-progreso"></button>
+                                <button id="tercer-progreso"></button>
+                            </div>
+                        </div>
+                        <div class="opcionesBotones">
+                            <div class="enviarFormulario">
+                                <input type="submit" id="enviarFormulario" name="enviarFormulario" value="Enviar el formulario">
+                            </div>
+                            <div class="limpiarTodo">
+                                <button type="button" id="botonLimpiarTodo" name="botonLimpiarTodo" onclick="">Limpiar campos</button>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </fieldset>
         </div>
+        <footer>
+            <div class="mainFooter">
+                <div class="primerApartado">
+                    <div class="tituloRevistaTrayectos">
+                        <label id="tituloRevistaTrayectos"><strong>Revista Trayectos, Chiclayo</strong></label>
+                        <hr>
+                    </div>
+                    <div class="redireccionesRevistaTrayectos">
+                        <div class="redirrecionesNombre">
+                            <div class="iconoRedirrecionesNombre">
+                                
+                                <a href="" target="_blank"><i class="fi fi-ss-catalog-magazine" id="iconoRedirrecionesNombre"></i></a>
+                            </div>
+                            <div class="textoRedirrecionesNombre">
+                                <a href="" target="_blank"><label id="textoRedirrecionesNombre">Revista Trayectos</label></a>
+                            </div>
+                        </div>
+                        <div class="redirrecionesNumero">
+                            <div class="iconoRedirrecionesNumero">
+                                <a href="" target="_blank"><i class="fi fi-ss-phone-call" id="iconoRedirrecionesNumero"></i></a>
+                            </div>
+                            <div class="textoRedirrecionesNumero">
+                                <a href="" target="_blank"><label id="textoRedirrecionesNumero">(+51) 987 654 321</label></a>
+                            </div>
+                        </div>
+                        <div class="redirrecionesCorreo">
+                            <div class="iconoRedirrecionesCorreo">
+                                <a href="" target="_blank"><i class="fi fi-sc-envelope" id="iconoRedirrecionesCorreo"></i></a>
+                            </div>
+                            <div class="textoRedirrecionesCorreo">
+                                <a href="" target="_blank"><label id="textoRedirrecionesCorreo">revistaTrayectos@hotmail.com</label></a>
+                            </div>
+                        </div>
+                        <div class="redirrecionesUbicacion">
+                            <div class="iconoRedirrecionesUbicacion">
+                                <a href="" target="_blank"><i class="fi fi-ss-marker" id="iconoRedirrecionesUbicacion"></i></a>
+                            </div>
+                            <div class="textoRedirrecionesUbicacion">
+                                <a href="" target="_blank"><label id="textoRedirrecionesUbicacion">Bolivar 408, Plaza de Armas de Ferreñafe, Ferreñafe 14311</label></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="segundoApartado">
+                    <div class="campoNosotros">
+                        <div class="tituloNosotros">
+                            <label id="tituloNosotros"><strong>Sobre Nosotros</strong></label>
+                            <hr>
+                        </div>
+                        <div class="redereccionesSobreNosotros">
+                            <div class="redireccionHistoria">
+                                <div class="iconoRedireccionHistoria">
+                                    <a href="" target="_blank"><i class="fi fi-ss-scroll-document-story" id="iconoRedireccionHistoria"></i></a>
+                                </div>
+                                <div class="textoRedireccionHistoria">
+                                    <a href="" target="_blank"><label id="textoRedireccionHistoria">Nuestra Historia</label></a>
+                                </div>
+                            </div>
+                            <div class="redireccionMisionVision">
+                                <div class="iconoRedireccionMisionVision">
+                                    <a href="" target="_blank"><i class="fi fi-ss-eye-arrow-progress" id="iconoRedireccionMisionVision"></i></a>
+                                </div>
+                                <div class="textoRedireccionMisionVision">
+                                    <a href="" target="_blank"><label id="textoRedireccionMisionVision">Nuestra Mision y Vision</label></a>
+                                </div>
+                            </div>
+                            <div class="redireccionObjetivo">
+                                <div class="iconoRedireccionObjetivo">
+                                    <a href="" target="_blank"><i class="fi fi-ss-bullseye-arrow" id="iconoRedireccionObjetivo"></i></a>
+                                </div>
+                                <div class="textoRedireccionObjetivo">
+                                    <a href="" target="_blank"><label id="textoRedireccionObjetivo">Nuestro Objetivo</label></a>
+                                </div>
+                            </div>
+                            <div class="redireccionValores">
+                                <div class="iconoRedireccionValores">
+                                    <a href="" target="_blank"><i class="fi fi-ss-diamond" id="iconoRedireccionValores"></i></a>
+                                </div>
+                                <div class="textoRedireccionValores">
+                                    <a href="" target="_blank"><label id="textoRedireccionValores">Nuestros Valores</label></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tercerApartado">
+                    <div class="campoNuestrasEdiciones">
+                        <div class="tituloNuestrasEdiciones">
+                            <label id="tituloNuestrasEdiciones"><strong>Nuestras Ediciones</strong></label>
+                            <hr>
+                        </div>
+                        <div class="redireccionesNuestrasEdiciones">
+                            <div class="redireccionPrimeraEdicion">
+                                <div class="iconoRedirrecionPrimeraEdicion">
+                                    <a href="" target="_blank"><i class="fi fi-ss-book-bookmark" id="iconoRedirrecionPrimeraEdicion"></i></a>
+                                </div>
+                                <div class="textoRedirrecionPrimeraEdicion">
+                                    <a href="" target="_blank"><label id="textoRedirrecionPrimeraEdicion">Primera Edicion</label></a>
+                                </div>
+                            </div>
+                            <div class="redireccionTodasEdiciones">
+                                <div class="iconoRedirrecionTodasEdiciones">
+                                    <a href="" target="_blank"><i class="fi fi-ss-books" id="iconoRedirrecionTodasEdiciones"></i></a>
+                                </div>
+                                <div class="textoRedirrecionTodasEdiciones">
+                                    <a href="" target="_blank"><label id="textoRedirrecionTodasEdiciones">Todas las ediciones</label></a>
+                                </div>
+                            </div>
+                            <div class="redireccionUltimaEdicion">
+                                <div class="iconoRedirrecionUltimaEdicion">
+                                    <a href="" target="_blank"><i class="fi fi-ss-book-alt" id="iconoRedirrecionUltimaEdicion"></i></a>
+                                </div>
+                                <div class="textoRedirrecionUltimaEdicion">
+                                    <a href="" target="_blank"><label id="textoRedirrecionUltimaEdicion">Ultima Edicion</label></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="cuartoApartado">
+                    <div class="campoLegal">
+                        <div class="tituloLegal">
+                            <label id="tituloLegal"><strong>Legal</strong></label>
+                            <hr>
+                        </div>
+                        <div class="redireccionesLegal">
+                            <div class="redireccionPolitica">
+                                <div class="iconoRedirrecionPolitica">
+                                    <a href="" target="_blank"><i class="fi fi-ss-cookie-alt" id="iconoRedirrecionPolitica"></i></a>
+                                </div>
+                                <div class="textoRedirrecionPolitica">
+                                    <a href="" target="_blank"><label id="textoRedirrecionPolitica">Politica de Cookies</label></a>
+                                </div>
+                            </div>
+                            <div class="redireccionPrivacidad">
+                                <div class="iconoRedirrecionPrivacidad">
+                                    <a href="" target="_blank"><i class="fi fi-ss-shield-check" id="iconoRedirrecionPrivacidad"></i></a>
+                                </div>
+                                <div class="textoRedirrecionPrivacidad">
+                                    <a href="" target="_blank"><label id="textoRedirrecionPrivacidad">Politica de Privacidad</label></a>
+                                </div>
+                            </div>
+                            <div class="redireccionCondiciones">
+                                <div class="iconoRedirrecionCondiciones">
+                                    <a href="" target="_blank"><i class="fi fi-ss-document" id="iconoRedirrecionCondiciones"></i></a>
+                                </div>
+                                <div class="textoRedirrecionCondiciones">
+                                    <a href="" target="_blank"><label id="textoRedirrecionCondiciones">Condiciones de Uso Legal Web</label></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="quintoApartado">
+                    <div class="dejanosCorreo">
+                        <div class="tituloDejanosCorreo">
+                            <label id="tituloDejanosCorreo"><strong>Dejanos tu correo:</strong></label>
+                            <hr>
+                        </div>
+                        <div class="inputCorreo">
+                            <div class="inputDejanosCorreo">
+                                <input type="text" id="correoIngresado" name="correoIngresado" placeholder="Ingresa tu correo" autocomplete="off">
+                            </div>
+                            <div class="botonEnviarCorreo">
+                                <button type="button" id="enviarCorreoBoton" name="enviarCorreoBoton" onclick="">Enviar</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="encuentranosEn">
+                        <div class="tituloEncuentranosEn">
+                            <label id="tituloEncuentranosEn"><strong>Encuentranos en:</strong></label>
+                            <hr>
+                        </div>
+                        <div class="iconosEncuentranosEn">
+                            <a href="https://www.facebook.com/" target="_blank"><i class="fi fi-brands-facebook" id="iconoFacebookTrayectos"></i></a>
+                            <a href="https://www.instagram.com/" target="_blank"><i class="fi fi-brands-instagram" id="iconoInstagramTrayectos"></i></a>
+                            <a href="https://www.x.com/" target="_blank"><i class="fi fi-brands-twitter-alt" id="iconoTwitterTrayectos"></i></a>
+                            <a href="https://www.linkedin.com/" target="_blank"><i class="fi fi-brands-linkedin" id="iconoLinkedInTrayectos"></i></a>
+                            <a href="https://www.youtube.com/" target="_blank"><i class="fi fi-brands-youtube" id="iconoYoutubeTrayectos"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="secondaryFooter">
+                <div class="tituloDerechosReservados">
+                    <label id="tituloDerechosReservados">Trayectos © Todos los derechos reservados 2024</label>
+                </div>
+                <div class="tituloNombreTrayectos">
+                    <label id="tituloNombreTrayectos">revistaTrayectos.com</label>
+                </div>
+            </div>
+        </footer>
     </body>
 </html>

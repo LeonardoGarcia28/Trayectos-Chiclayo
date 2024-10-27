@@ -5,55 +5,435 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Revista Trayectos</title>
         <link rel="stylesheet" href="css/main.css">
-        <script src="js/main.js"></script>
         <link rel="icon" type="image/png" href="icon/trayectosChiclayoIcon.png">
+        <script src="js/main.js"></script>
     </head>
     <body>
-        <div class="header">
-            <div class="primerHeader">
-                <img class="logoHeader" src="" alt="">
-                <img class="tituloHeader" src="" alt="">
-                <img class="desplegableHeader" src="" alt="">
+        <header>
+            <div class="headerInicial">
+                <div class="logoHeader">
+                    <img src="./icon/trayectosChiclayoIcon.png" id="logoHeader">
+                </div>
+                <div class="tituloHeader">
+                    <div class="primerTituloHeader">
+                        <a href="" target="_blank"><label id="primerTituloHeader">Revista Trayectos</label></a>
+                    </div>
+                    <div class="barraSeparadora">
+                        <a href="" target="_blank"><label id="barraSeparadora">|</label></a>
+                    </div>
+                    <div class="segundoTituloHeader">
+                        <a href="" target="_blank"><label id="segundoTituloHeader">¡Sigue nuestros pasos!</label></a>
+                    </div>
+                </div>
+                <div class="iconosHeader">
+                    <div class="buscadorLupa">
+                        <input type="text" id="textoBuscador" name="textoBuscador" placeholder="">
+                        <div class="iconoLupa">
+                            <i class="fi fi-bs-search" id="iconoLupa"></i>
+                        </div>
+                    </div>
+                    <div class="iconoUsuarioHeader">
+                        <i class="fi fi-ss-user" id="iconoUsuarioHeader"></i>
+                    </div>
+                    <div class="iconoCorazonHeader">
+                        <i class="fi fi-ss-heart" id="iconoCorazonHeader"></i>
+                    </div>
+                    <div class="iconoBurgerHeader">
+                        <i class="fi fi-ss-menu-burger" id="iconoBurgerHeader"></i>
+                    </div>
+                </div>
             </div>
-            <div class="menuNavegacion">
-                <ul>
-                    <li class="inicioMenuNavegacion"><a href="#Inicio">Inicio</a></li>
-                    <li class="nosotrosMenuNavegacion"><a href="#" target="_blank">Sobre Nosotros</a></li>
-                    <li class="ultimaEdicionMenuNavegacion"><a href="#" target="_blank">Ultima edicion</a></li>
-                    <li class="revistaTrayectosMenuNavegacion"><a href="#" target="_blank">Revistas Trayectos</a></li>
-                    <li class="contactanosMenuNavegacion"><a href="#" target="_blank">Contactanos</a></li>
-                </ul>
+            <div class="subHeader">
+                <a href="" target="_blank"><label id="inicioSubHeader">INICIO</label></a>
+                <a href="" target="_blank"><label id="sobreNosotrosSubHeader">SOBRE NOSOTROS</label></a>
+                <a href="" target="_blank"><label id="revistasSubHeader">REVISTAS</label></a>
+                <a href="" target="_blank"><label id="contactoSubHeader">CONTACTO</label></a>
+                <a href="" target="_blank"><label id="escribenosSubHeader">ESCRIBENOS</label></a>
+                <a href="" target="_blank"><label id="registrateSubHeader">REGISTRATE</label></a>
+            </div>
+        </header>
+        <div class="imagenPrincipal">
+            <img src="./img/imagenPrincipalTrayectos.jpg" id="imagenPrincipal">
+        </div>
+        <div class="general">
+            <div class="sobreNosotros">
+                <div class="informacionSobreNosotros">
+                    <div class="tituloSobreNosotros">
+                        <h2>Sobre Nosotros</h2>
+                        <hr>
+                    </div>
+                    <div class="textoSobreNosotros">
+                        <p id="textoSobreNosotros">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                            In alias rem id beatae assumenda similique qui repudiandae 
+                            placeat quia veritatis, quas fugiat? Sapiente perspiciatis 
+                            corrupti incidunt aspernatur soluta, est veritatis.
+                        </p>
+                    </div>
+                    <div class="botonSobreNosotros">
+                        <a href="" target="_blank"><button type="button" id="botonSobreNosotros" name="botonSobreNosotros">Conoce más...</button></a>
+                    </div>
+                </div>
+                <div class="imagenSobreNosotros">
+                    <img src="./icon/trayectosChiclayoIcon.png" id="imagenSobreNosotros">
+                </div>
+            </div>
+            <div class="revistaTrayectos">
+                <div class="imagenRevistaTrayectos">
+                    <img src="./img/portadasRevistas/REVISTA 1.jpg" id="imagenRevistaTrayectos">
+                </div>
+                <div class="informacionRevistaTrayectos">
+                    <div class="tituloRevistaTrayectos">
+                        <h2>Revista Trayectos</h2>
+                        <hr>
+                    </div>
+                    <div class="textoRevistaTrayectos">
+                        <p id="textoRevistaTrayectos">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                            In alias rem id beatae assumenda similique qui repudiandae 
+                            placeat quia veritatis, quas fugiat? Sapiente perspiciatis 
+                            corrupti incidunt aspernatur soluta, est veritatis.
+                        </p>
+                    </div>
+                    <div class="botonRevistaTrayectos">
+                        <a href="" target="_blank"><button type="button" id="botonRevistaTrayectos" name="botonRevistaTrayectos">Conoce más...</button></a>
+                    </div>
+                </div>
+            </div>
+            <div class="primeraEdicion">
+                <div class="informacionPrimeraEdicion">
+                    <div class="tituloPrimeraEdicion">
+                        <h2>Primera edición de Trayectos</h2>
+                        <hr>
+                    </div>
+                    <div class="textoPrimeraEdicion">
+                        <p id="textoPrimeraEdicion">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                            In alias rem id beatae assumenda similique qui repudiandae 
+                            placeat quia veritatis, quas fugiat? Sapiente perspiciatis 
+                            corrupti incidunt aspernatur soluta, est veritatis.
+                        </p>
+                    </div>
+                    <div class="botonPrimeraEdicion">
+                        <a href="" target="_blank"><button type="button" id="botonPrimeraEdicion" name="botonPrimeraEdicion">Leela Ahora...</button></a>
+                    </div>
+                </div>
+                <div class="imagenPrimeraEdicion">
+                    <img src="./img/portadasRevistas/REVISTA 1.jpg" id="imagenPrimeraEdicion">
+                </div>
+            </div>
+            <div class="todasEdiciones">
+                <div class="informacionTodasEdiciones">
+                    <div class="tituloTodasEdiciones">
+                        <h2>Todas las Ediciones</h2>
+                        <hr>
+                    </div>
+                    <div class="textoTodasEdiciones">
+                        <p id="textoTodasEdiciones">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                            In alias rem id beatae assumenda similique qui repudiandae 
+                        </p>
+                    </div>
+                    <div class="campoTodasEdiciones">
+                        <i class="fi fi-ss-angle-left" id="iconoFlechaIzquierda" onclick=""></i>
+                        <div class="imagenesTodasEdiciones">
+                            <img src="./img/portadasRevistas/REVISTA 2.jpg" id="primeraRevista">
+                            <img src="./img/portadasRevistas/REVISTA 3.jpg" id="segundaRevista">
+                            <img src="./img/portadasRevistas/REVISTA 4.jpg" id="terceraRevista">
+                            <img src="./img/portadasRevistas/REVISTA 5.jpg" id="cuartaRevista">
+                            <img src="./img/portadasRevistas/REVISTA 6.jpg" id="quintaRevista">
+                        </div>
+                        <i class="fi fi-ss-angle-right" id="iconoFlechaDerecha" onclick=""></i>
+                    </div>
+                    <div class="botonTodasEdiciones">
+                        <a href="" target="_blank"><button type="button" id="botonTodasEdiciones" name="botonTodasEdiciones">Ver todas las ediciones publicadas</button></a>
+                    </div>
+                </div>
+            </div>
+            <div class="ultimaEdicion">
+                <div class="informacionUltimaEdicion">
+                    <div class="tituloUltimaEdicion">
+                        <h2>Ultima edicion de Trayectos</h2>
+                        <hr>
+                    </div>
+                    <div class="textoUltimaEdicion">
+                        <p id="textoUltimaEdicion">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                            In alias rem id beatae assumenda similique qui repudiandae 
+                            placeat quia veritatis, quas fugiat? Sapiente perspiciatis 
+                            corrupti incidunt aspernatur soluta, est veritatis.
+                        </p>
+                    </div>
+                    <div class="botonUltimaEdicion">
+                        <a href="" target="_blank"><button type="button" id="botonUltimaEdicion" name="botonUltimaEdicion">Leela Ahora...</button></a>
+                    </div>
+                </div>
+                <div class="imagenUltimaEdicion">
+                    <img src="./img/portadasRevistas/REVISTA 1.jpg" id="imagenUltimaEdicion">
+                </div>
+            </div>
+            <div class="contactanos">
+                <div class="imagenContactanos">
+                    <img src="./img/portadasRevistas/REVISTA 1.jpg" id="imagenContactanos">
+                </div>
+                <div class="informacionContactanos">
+                    <div class="tituloContactanos">
+                        <h2>Contactanos</h2>
+                        <hr>
+                    </div>
+                    <div class="textoContactanos">
+                        <div class="redireccionTelefono">
+                            <div class="iconoRedireccionTelefono">
+                                <a href="" target="_blank"><i class="fi fi-ss-phone-call" id="iconoRedireccionTelefono"></i></a>
+                            </div>
+                            <div class="textoRedireccionTelefono">
+                                <a href="" target="_blank"><label id="textoRedireccionTelefono">(+51) 987 654 321</label></a>
+                            </div>
+                        </div>
+                        <div class="redireccionWhatsApp">
+                            <div class="iconoRedireccionWhatsApp">
+                                <a href="" target="_blank"><i class="fi fi-brands-whatsapp" id="iconoRedireccionWhatsApp"></i></a>
+                            </div>
+                            <div class="textoRedireccionWhatsApp">
+                                <a href="" target="_blank"><label id="textoRedireccionWhatsApp">WhatsApp: (+51) 987 654 321</label></a>
+                            </div>
+                        </div>
+                        <div class="redireccionCorreo">
+                            <div class="iconoRedireccionCorreo">
+                                <a href="" target="_blank"><i class="fi fi-sc-envelope" id="iconoRedireccionCorreo"></i></a>
+                            </div>
+                            <div class="textoRedireccionCorreo">
+                                <a href="" target="_blank"><label id="textoRedireccionCorreo">revistatrayectos@hotmail.com</label></a>
+                            </div>
+                        </div>
+                        <div class="redireccionUbicacion">
+                            <div class="iconoRedireccionUbicacion">
+                                <a href="" target="_blank"><i class="fi fi-ss-marker" id="iconoRedireccionUbicacion"></i></a>
+                            </div>
+                            <div class="textoRedireccionUbicacion">
+                                <a href="" target="_blank"><label id="textoRedireccionUbicacion">Bolivar 408, Plaza de Armas de Ferreñafe, Ferreñafe 14311</label></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="botonContactanos">
+                        <a href="" target="_blank"><button type="button" id="botonContactanos" name="botonContactanos">Visitanos...</button></a>
+                    </div>
+                </div>
+            </div>
+            <div class="dejanosMensaje">
+                <div class="informacionDejanosMensaje">
+                    <div class="tituloDejanosMensaje">
+                        <h2>Dejanos un mensaje!</h2>
+                        <hr>
+                    </div>
+                    <div class="textoDejanosMensaje">
+                        <p id="textoDejanosMensaje">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                            In alias rem id beatae assumenda similique qui repudiandae 
+                            placeat quia veritatis, quas fugiat? Sapiente perspiciatis 
+                            corrupti incidunt aspernatur soluta, est veritatis.
+                        </p>
+                    </div>
+                    <div class="botonDejanosMensaje">
+                        <a href="" target="_blank"><button type="button" id="botonDejanosMensaje" name="botonDejanosMensaje">Dejanos un mensaje</button></a>
+                    </div>
+                </div>
+                <div class="imagenDejanosMensaje">
+                    <img src="./img/portadasRevistas/REVISTA 1.jpg" id="imagenDejanosMensaje">
+                </div>
             </div>
         </div>
-        <div class="ultimaEdicion">
-            <h1>Ultima edicion de Trayectos</h1>
-            <div>
-                <img src="" alt="">
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                    In alias rem id beatae assumenda similique qui repudiandae 
-                    placeat quia veritatis, quas fugiat? Sapiente perspiciatis 
-                    corrupti incidunt aspernatur soluta, est veritatis.
-                </p>
+        <footer>
+            <div class="mainFooter">
+                <div class="primerApartado">
+                    <div class="tituloRevistaTrayectos">
+                        <label id="tituloRevistaTrayectos"><strong>Revista Trayectos, Chiclayo</strong></label>
+                        <hr>
+                    </div>
+                    <div class="redireccionesRevistaTrayectos">
+                        <div class="redirrecionesNombre">
+                            <div class="iconoRedirrecionesNombre">
+                                
+                                <a href="" target="_blank"><i class="fi fi-ss-catalog-magazine" id="iconoRedirrecionesNombre"></i></a>
+                            </div>
+                            <div class="textoRedirrecionesNombre">
+                                <a href="" target="_blank"><label id="textoRedirrecionesNombre">Revista Trayectos</label></a>
+                            </div>
+                        </div>
+                        <div class="redirrecionesNumero">
+                            <div class="iconoRedirrecionesNumero">
+                                <a href="" target="_blank"><i class="fi fi-ss-phone-call" id="iconoRedirrecionesNumero"></i></a>
+                            </div>
+                            <div class="textoRedirrecionesNumero">
+                                <a href="" target="_blank"><label id="textoRedirrecionesNumero">(+51) 987 654 321</label></a>
+                            </div>
+                        </div>
+                        <div class="redirrecionesCorreo">
+                            <div class="iconoRedirrecionesCorreo">
+                                <a href="" target="_blank"><i class="fi fi-sc-envelope" id="iconoRedirrecionesCorreo"></i></a>
+                            </div>
+                            <div class="textoRedirrecionesCorreo">
+                                <a href="" target="_blank"><label id="textoRedirrecionesCorreo">revistaTrayectos@hotmail.com</label></a>
+                            </div>
+                        </div>
+                        <div class="redirrecionesUbicacion">
+                            <div class="iconoRedirrecionesUbicacion">
+                                <a href="" target="_blank"><i class="fi fi-ss-marker" id="iconoRedirrecionesUbicacion"></i></a>
+                            </div>
+                            <div class="textoRedirrecionesUbicacion">
+                                <a href="" target="_blank"><label id="textoRedirrecionesUbicacion">Bolivar 408, Plaza de Armas de Ferreñafe, Ferreñafe 14311</label></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="segundoApartado">
+                    <div class="campoNosotros">
+                        <div class="tituloNosotros">
+                            <label id="tituloNosotros"><strong>Sobre Nosotros</strong></label>
+                            <hr>
+                        </div>
+                        <div class="redereccionesSobreNosotros">
+                            <div class="redireccionHistoria">
+                                <div class="iconoRedireccionHistoria">
+                                    <a href="" target="_blank"><i class="fi fi-ss-scroll-document-story" id="iconoRedireccionHistoria"></i></a>
+                                </div>
+                                <div class="textoRedireccionHistoria">
+                                    <a href="" target="_blank"><label id="textoRedireccionHistoria">Nuestra Historia</label></a>
+                                </div>
+                            </div>
+                            <div class="redireccionMisionVision">
+                                <div class="iconoRedireccionMisionVision">
+                                    <a href="" target="_blank"><i class="fi fi-ss-eye-arrow-progress" id="iconoRedireccionMisionVision"></i></a>
+                                </div>
+                                <div class="textoRedireccionMisionVision">
+                                    <a href="" target="_blank"><label id="textoRedireccionMisionVision">Nuestra Mision y Vision</label></a>
+                                </div>
+                            </div>
+                            <div class="redireccionObjetivo">
+                                <div class="iconoRedireccionObjetivo">
+                                    <a href="" target="_blank"><i class="fi fi-ss-bullseye-arrow" id="iconoRedireccionObjetivo"></i></a>
+                                </div>
+                                <div class="textoRedireccionObjetivo">
+                                    <a href="" target="_blank"><label id="textoRedireccionObjetivo">Nuestro Objetivo</label></a>
+                                </div>
+                            </div>
+                            <div class="redireccionValores">
+                                <div class="iconoRedireccionValores">
+                                    <a href="" target="_blank"><i class="fi fi-ss-diamond" id="iconoRedireccionValores"></i></a>
+                                </div>
+                                <div class="textoRedireccionValores">
+                                    <a href="" target="_blank"><label id="textoRedireccionValores">Nuestros Valores</label></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tercerApartado">
+                    <div class="campoNuestrasEdiciones">
+                        <div class="tituloNuestrasEdiciones">
+                            <label id="tituloNuestrasEdiciones"><strong>Nuestras Ediciones</strong></label>
+                            <hr>
+                        </div>
+                        <div class="redireccionesNuestrasEdiciones">
+                            <div class="redireccionPrimeraEdicion">
+                                <div class="iconoRedirrecionPrimeraEdicion">
+                                    <a href="" target="_blank"><i class="fi fi-ss-book-bookmark" id="iconoRedirrecionPrimeraEdicion"></i></a>
+                                </div>
+                                <div class="textoRedirrecionPrimeraEdicion">
+                                    <a href="" target="_blank"><label id="textoRedirrecionPrimeraEdicion">Primera Edicion</label></a>
+                                </div>
+                            </div>
+                            <div class="redireccionTodasEdiciones">
+                                <div class="iconoRedirrecionTodasEdiciones">
+                                    <a href="" target="_blank"><i class="fi fi-ss-books" id="iconoRedirrecionTodasEdiciones"></i></a>
+                                </div>
+                                <div class="textoRedirrecionTodasEdiciones">
+                                    <a href="" target="_blank"><label id="textoRedirrecionTodasEdiciones">Todas las ediciones</label></a>
+                                </div>
+                            </div>
+                            <div class="redireccionUltimaEdicion">
+                                <div class="iconoRedirrecionUltimaEdicion">
+                                    <a href="" target="_blank"><i class="fi fi-ss-book-alt" id="iconoRedirrecionUltimaEdicion"></i></a>
+                                </div>
+                                <div class="textoRedirrecionUltimaEdicion">
+                                    <a href="" target="_blank"><label id="textoRedirrecionUltimaEdicion">Ultima Edicion</label></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="cuartoApartado">
+                    <div class="campoLegal">
+                        <div class="tituloLegal">
+                            <label id="tituloLegal"><strong>Legal</strong></label>
+                            <hr>
+                        </div>
+                        <div class="redireccionesLegal">
+                            <div class="redireccionPolitica">
+                                <div class="iconoRedirrecionPolitica">
+                                    <a href="" target="_blank"><i class="fi fi-ss-cookie-alt" id="iconoRedirrecionPolitica"></i></a>
+                                </div>
+                                <div class="textoRedirrecionPolitica">
+                                    <a href="" target="_blank"><label id="textoRedirrecionPolitica">Politica de Cookies</label></a>
+                                </div>
+                            </div>
+                            <div class="redireccionPrivacidad">
+                                <div class="iconoRedirrecionPrivacidad">
+                                    <a href="" target="_blank"><i class="fi fi-ss-shield-check" id="iconoRedirrecionPrivacidad"></i></a>
+                                </div>
+                                <div class="textoRedirrecionPrivacidad">
+                                    <a href="" target="_blank"><label id="textoRedirrecionPrivacidad">Politica de Privacidad</label></a>
+                                </div>
+                            </div>
+                            <div class="redireccionCondiciones">
+                                <div class="iconoRedirrecionCondiciones">
+                                    <a href="" target="_blank"><i class="fi fi-ss-document" id="iconoRedirrecionCondiciones"></i></a>
+                                </div>
+                                <div class="textoRedirrecionCondiciones">
+                                    <a href="" target="_blank"><label id="textoRedirrecionCondiciones">Condiciones de Uso Legal Web</label></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="quintoApartado">
+                    <div class="dejanosCorreo">
+                        <div class="tituloDejanosCorreo">
+                            <label id="tituloDejanosCorreo"><strong>Dejanos tu correo:</strong></label>
+                            <hr>
+                        </div>
+                        <div class="inputCorreo">
+                            <div class="inputDejanosCorreo">
+                                <input type="text" id="correoIngresado" name="correoIngresado" placeholder="Ingresa tu correo" autocomplete="off">
+                            </div>
+                            <div class="botonEnviarCorreo">
+                                <button type="button" id="enviarCorreoBoton" name="enviarCorreoBoton" onclick="">Enviar</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="encuentranosEn">
+                        <div class="tituloEncuentranosEn">
+                            <label id="tituloEncuentranosEn"><strong>Encuentranos en:</strong></label>
+                            <hr>
+                        </div>
+                        <div class="iconosEncuentranosEn">
+                            <a href="https://www.facebook.com/" target="_blank"><i class="fi fi-brands-facebook" id="iconoFacebookTrayectos"></i></a>
+                            <a href="https://www.instagram.com/" target="_blank"><i class="fi fi-brands-instagram" id="iconoInstagramTrayectos"></i></a>
+                            <a href="https://www.x.com/" target="_blank"><i class="fi fi-brands-twitter-alt" id="iconoTwitterTrayectos"></i></a>
+                            <a href="https://www.linkedin.com/" target="_blank"><i class="fi fi-brands-linkedin" id="iconoLinkedInTrayectos"></i></a>
+                            <a href="https://www.youtube.com/" target="_blank"><i class="fi fi-brands-youtube" id="iconoYoutubeTrayectos"></i></a>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </div>
-        <div class="todasLasEdiciones">
-            <h1>Todas las Ediciones</h1>
-            <div class="">
-                <img src="" alt="">
-                <img src="" alt="">
-                <img src="" alt="">
-                <img src="" alt="">
+            <div class="secondaryFooter">
+                <div class="tituloDerechosReservados">
+                    <label id="tituloDerechosReservados">Trayectos © Todos los derechos reservados 2024</label>
+                </div>
+                <div class="tituloNombreTrayectos">
+                    <label id="tituloNombreTrayectos">revistaTrayectos.com</label>
+                </div>
             </div>
-        </div>
-        <div class="sobreNosotrosInicio">
-            <h1>Revista Trayectos</h1>
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                In alias rem id beatae assumenda similique qui repudiandae 
-                placeat quia veritatis, quas fugiat? Sapiente perspiciatis 
-                corrupti incidunt aspernatur soluta, est veritatis.
-            </p>
-        </div>
+        </footer>
     </body>
 </html>

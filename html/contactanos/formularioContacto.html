@@ -4,27 +4,226 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Formulario de Contacto</title>
-        <link rel="stylesheet" href="../../css/contactanos/formularioDeContacto.css">
-        <script src="../../js/formularioDeContacto.js"></script>
         <link rel="icon" type="image/png" href="../../icon/formularioDeContacto.png">
+        <link rel="stylesheet" href="../../css/contactanos/formularioDeContacto.css">
+        <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.6.0/uicons-regular-straight/css/uicons-regular-straight.css'>
+        <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.6.0/uicons-solid-straight/css/uicons-solid-straight.css'>
+        <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.6.0/uicons-bold-rounded/css/uicons-bold-rounded.css'>
+        <script src="../../js/formularioDeContacto.js"></script>
     </head>
     <body>
+        <header>
+
+        </header>
         <div class="">
-            <form action="">
-                <label id="" for="inputNombres">Nombres</label>
-                <input class="" name="" id="inputNombres" type="text" placeholder="Ingresa tus nombres">
-                <br>
-                <label id="" for="inputApellidos">Apellidos</label>
-                <input class="" name="" id="inputApellidos" type="text" placeholder="Ingresa tus apellidos">
-                <br>
-                <label id="" for="inputTelefono">Telefono</label>
-                <input class="" name="" id="inputTelefono" type="text" placeholder="Ingresa tu telefono">
-                <br>
-                <label id="" for="inputCorreoElectronico">CorreoElectronico</label>
-                <input class="" name="" id="inputCorreoElectronico" type="text" placeholder="Ingresa tu correo">
-                <br>
-                <button class="">Enviar</button>
-            </form>
+            <fieldset class="primerFieldset">
+                <div class="tituloFieldset">
+                    <h1>Formulario de contacto:</h1>
+                </div>
+                <form method="post">
+                    <div class="formulario">
+                        <div class="campoNombres">
+                            <div class="campoPrimerNombre">
+                                <div class="labelsPrimerNombre">
+                                    <label for="inputPrimerNombre" id="labelPrimerNombre">Primer nombre: </label>
+                                    <label for="inputPrimerNombre" id="campoObligatorio" title="Este campo es obligatorio">*</label>
+                                </div>
+                                <div class="inputPrimerNombre">
+                                    <i class="fi fi-rs-letter-case" id="iconoPrimerNombre"></i>
+                                    <input type="text" name="inputPrimerNombre" id="inputPrimerNombre" placeholder="Ingresar primer nombre" autocomplete="off" required>
+                                    <i class="fi fi-rs-check-circle" id="verificacionPrimerNombre"></i>
+                                </div>
+                                <div class="comentarioPrimerNombre">
+                                    <label style="color: transparent;">Comentario Default</label>
+                                </div>
+                            </div>
+                            <div class="campoSegundoNombre">
+                                <div class="labelsSegundoNombre">
+                                    <label for="inputSegundoNombre" id="labelSegundoNombre">Segundo nombre: </label>
+                                    <label for="inputSegundoNombre" id="campoObligatorio" title="Este campo es obligatorio">*</label>
+                                </div>
+                                <div class="inputSegundoNombre">
+                                    <i class="fi fi-rs-letter-case" id="iconoSegundoNombre"></i>
+                                    <input type="text" name="inputSegundoNombre" id="inputSegundoNombre" placeholder="Ingresar segundo nombre" autocomplete="off" required>
+                                    <i class="fi fi-rs-check-circle" id="verificacionSegundoNombre"></i>
+                                </div>
+                                <div class="comentarioSegundoNombre">
+                                    <label style="color: transparent;">Comentario Default</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="campoApellidos">
+                            <div class="campoPrimerApellido">
+                                <div class="labelsPrimerApellido">
+                                    <label for="inputPrimerApellido" id="labelPrimerApellido">Primer apellido: </label>
+                                    <label for="inputPrimerApellido" id="campoObligatorio" title="Este campo es obligatorio">*</label>
+                                </div>
+                                <div class="inputPrimerApellido">
+                                    <i class="fi fi-rs-letter-case" id="iconoPrimerApellido"></i>
+                                    <input type="text" name="inputPrimerApellido" id="inputPrimerApellido" placeholder="Ingresar primer apellido" autocomplete="off" required>
+                                    <i class="fi fi-rs-check-circle" id="VerificacionPrimerApellido"></i>
+                                </div>
+                                <div class="comentarioPrimerApellido">
+                                    <label style="color: transparent;">Comentario Default</label>
+                                </div>
+                            </div>
+                            <div class="campoSegundoApellido">
+                                <div class="labelsSegundoApellido">
+                                    <label for="inputSegundoApellido" id="labelSegundoApellido">Segundo apellido: </label>
+                                    <label for="inputSegundoApellido" id="campoObligatorio" title="Este campo es obligatorio">*</label>
+                                </div>
+                                <div class="inputSegundoApellido">
+                                    <i class="fi fi-rs-letter-case" id="iconoSegundoApellido"></i>
+                                    <input type="text" name="inputSegundoApellido" id="inputSegundoApellido" placeholder="Ingresar segundo apellido" autocomplete="off" required>
+                                    <i class="fi fi-rs-check-circle" id="verificacionSegundoApellido"></i>
+                                </div>
+                                <div class="comentarioSegundoApellido">
+                                    <label style="color: transparent;">Comentario Default</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="campoTelefono">
+                            <div class="labelsTelefono">
+                                <label for="prefijoTelefono" id="labelTelefono">Telefono: </label>
+                                <label for="prefijoTelefono" id="campoObligatorio" title="Este campo es obligatorio">*</label>
+                            </div>
+                            <div class="inputTelefono">
+                                <i class="fi fi-ss-phone-call" id="iconoTelefono"></i>
+                                <div class="inputsTelefono">
+                                    <div class="selectPrefijoTelefono">
+                                        <select name="prefijoTelefono" id="prefijoTelefono" required>
+                                            <option value="" selected disabled>-- Prefijo telefonico --</option>
+                                            <option value="" disabled></option>
+                                            <option value="+51">(+51) - Peru</option>
+                                            <option value="" disabled></option>
+                                            <option value="de" disabled>==== Norteamérica ====</option>
+                                            <option value="" disabled></option>
+                                            <option value="+54">(+54) - Argentina</option>
+                                            <option value="+591">(+591) - Bolivia</option>
+                                            <option value="+55">(+55) - Brazil</option>
+                                            <option value="+56">(+56) - Chile</option>
+                                            <option value="+57">(+57) - Colombia</option>
+                                            <option value="+593">(+593) - Ecuador</option>
+                                            <option value="+502">(+502) - Guyana</option>
+                                            <option value="+595">(+595) - Paraguay</option>
+                                            <option value="+51">(+51) - Peru</option>
+                                            <option value="+598">(+598) - Uruguay</option>
+                                            <option value="+58">(+58) - Venezuela</option>
+                                            <option value="" disabled></option>
+                                            <option value="de" disabled>==== Norteamérica ====</option>
+                                            <option value="" disabled></option>
+                                            <option value="+1">(+1) - Canada</option>
+                                            <option value="+52">(+52) - Mexico</option>
+                                            <option value="+1">(+1) - United States</option>
+                                            <option value="+1-787">(+1-787) - Puerto Rico</option>
+                                            <option value="" disabled></option>
+                                            <option value="de" disabled>==== Centroamérica ====</option>
+                                            <option value="" disabled></option>
+                                            <option value="+506">(+506) - Costa Rica</option>
+                                            <option value="+53">(+53) - Cuba</option>
+                                            <option value="+1-829">(+1-829) - Dominican Republic</option>
+                                            <option value="+503">(+503) - El Salvador</option>
+                                            <option value="+502">(+502) - Guatemala</option>
+                                            <option value="+504">(+504) - Honduras</option>
+                                            <option value="+505">(+505) - Nicaragua</option>
+                                            <option value="+507">(+507) - Panama</option>
+                                            <option value="+1-268">(+1-268) - Antigua and Barbuda</option>
+                                            <option value="+1-876">(+1-876) - Jamaica</option>
+                                            <option value="+1-784">(+1-784) - Saint Vincent and the Grenadines</option>
+                                            <option value="+1-758">(+1-758) - Saint Lucia</option>
+                                            <option value="+1-868">(+1-868) - Trinidad and Tobago</option>
+                                            <option value="+1-242">(+1-242) - Bahamas</option>
+                                            <option value="+1-246">(+1-246) - Barbados</option>
+                                            <option value="+1-264">(+1-264) - Anguilla</option>
+                                            <option value="+1-473">(+1-473) - Grenada</option>
+                                            <option value="+1-284">(+1-284) - British Virgin Islands</option>
+                                            <option value="+1-721">(+1-721) - Sint Maarten</option>
+                                            <option value="+1-767">(+1-767) - Dominica</option>
+                                            <option value="+1-441">(+1-441) - Bermuda</option>
+                                            <option value="+1-345">(+1-345) - Cayman Islands</option>
+                                            <option value="+1-664">(+1-664) - Montserrat</option>
+                                            <option value="+1-869">(+1-869) - Saint Kitts and Nevis</option>
+                                        </select>
+                                    </div>
+                                    <div class="inputNumeroTelefono">
+                                        <input type="number" name="inputTelefono" id="inputTelefono" placeholder="Ingresar numero telefonico" autocomplete="off" required>
+                                    </div>
+                                </div>
+                                <i class="fi fi-rs-check-circle" id="verificacionTelefono"></i>
+                            </div>
+                            <div class="comentarioTelefono">
+                                <label style="color: transparent;">Comentario Default</label>
+                            </div>
+                        </div>
+                        <div class="campoCorreoElectronico">
+                            <div class="labelsCorreoElectronico">
+                                <label for="inputCorreoElectronico" id="labelCorreoElectronico">Correo Electronico: </label>
+                                <label for="inputCorreoElectronico" id="campoObligatorio" title="Este campo es obligatorio">*</label>
+                            </div>
+                            <div class="inputCorreoElectronico">
+                                <i class="fi fi-br-envelope" id="iconoCorreoElectronico"></i>
+                                <div class="correoElectronicoAgregado">
+                                    <div class="">
+                                        <input type="text" name="inputCorreoElectronico" id="inputCorreoElectronico" placeholder="Ingresar correo electronico" autocomplete="off" required>
+                                    </div>
+                                    <div class="selectCorreoElectronico">
+                                        <label for="seleccionCorreoEletronico" id="labelSeleccionCorreoEletronico">@</label>
+                                        <select name="seleccionCorreoEletronico" id="seleccionCorreoEletronico" required>
+                                            <option value="default" selected disabled>-- Correo --</option>
+                                            <option value="gmail">Gmail</option>
+                                            <option value="hotmail">Hotmail</option>
+                                            <option value="yahoo">Yahoo</option>
+                                            <option value="outlook">Outlook</option>
+                                            <option value="icloud">iCloud</option>
+                                        </select>
+                                    </div>
+                                    <div class="selectTerminacionCorreo">
+                                        <label for="seleccionTerminacionCorreo" id="labelSeleccionTerminacionCorreo">.</label>
+                                        <select name="seleccionTerminacionCorreo" id="seleccionTerminacionCorreo" required>
+                                            <option value="default" selected disabled>-- Terminacion --</option>
+                                            <option value="com">com</option>
+                                            <option value="net">net</option>
+                                            <option value="org">org</option>
+                                            <option value="edu">edu</option>
+                                            <option value="gov">gov</option>
+                                            <option value="info">info</option>
+                                            <option value="org.pe">org.pe</option>
+                                            <option value="edu.pe">edu.pe</option>
+                                            <option value="gov.pe">gov.pe</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <i class="fi fi-rs-check-circle" id="verificacionCorreoElectronico"></i>
+                            </div>
+                            <div class="comentarioCorreoElectronico">
+                                <label style="color: transparent;">Comentario Default</label>
+                            </div>
+                        </div>
+                        <div class="barraProgreso">
+                            <label>Progreso del formulario de contacto: </label>
+                            <div class="barrasProgreso" id="barrasProgreso">
+                                <button id="primer-progreso"></button>
+                                <button id="segundo-progreso"></button>
+                                <button id="tercer-progreso"></button>
+                                <button id="cuarto-progreso"></button>
+                                <button id="quinto-progreso"></button>
+                                <button id="sexto-progreso"></button>
+                            </div>
+                        </div>
+                        <div class="opcionesBotones">
+                            <div class="campoBotonEnviarFormulario">
+                                <input type="submit" name="botonEnviarFormulario" id="botonEnviarFormulario" value="Enviar formulario">
+                            </div>
+                            <div class="limpiarTodo">
+                                <button type="button" id="botonLimpiarTodo" name="botonLimpiarTodo" onclick="">Limpiar campos</button>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </fieldset>
         </div>
+        <footer>
+
+        </footer>
     </body>
 </html>

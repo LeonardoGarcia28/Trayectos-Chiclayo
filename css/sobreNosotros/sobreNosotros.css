@@ -1,0 +1,29 @@
+.listaValores,
+.listaObjetivos {
+    display: flex;
+    justify-content: center;
+    gap: 5em;
+    margin-top: 2em;
+}
+.descripcionSobreNosotros,
+.descripcionVision,
+.descripcionMision,
+.descripcionValores,
+.descripcionHistoria,
+.descripcionObjetivos {
+    display: flex;
+    justify-content: center;
+    text-align: justify;
+    margin: auto auto;
+    width: 700px;
+}
+.tituloSobreNosotros,
+.tituloVision,
+.tituloMision,
+.tituloValores,
+.tituloHistoria,
+.tituloObjetivos {
+    display: flex;
+    justify-content: center;
+    margin-top: 2em;
+}

@@ -1,0 +1,173 @@
+html, body {
+    display: flex;
+    justify-content: center;
+    margin: 2em auto;
+}
+.formulario {
+    display: grid;
+    gap: 1em;
+}
+.primerFieldset {
+    border: 0.1em solid black;
+    border-radius: 10px;
+    width: 660px;
+    padding: 2em;
+}
+.tituloFieldset h1 {
+    text-align: center;
+    margin-bottom: 2em;
+}
+#campoObligatorio {
+    color: red;
+}
+.campoNombres,
+.campoApellidos,
+.inputsTelefono {
+    display: flex;
+    gap: 1em;
+}
+.inputPrimerNombre,
+.inputSegundoNombre,
+.inputPrimerApellido,
+.inputSegundoApellido,
+.inputTelefono,
+.inputCorreoElectronico {
+    display: flex;
+    justify-content: space-between;
+    border: 0.1em solid black;
+    border-radius: 10px;
+    padding: 0.5em;
+    width: 300px;
+}
+.inputTelefono,
+.inputCorreoElectronico {
+    width: 635px;
+}
+.campoPrimerNombre,
+.campoSegundoNombre,
+.campoPrimerApellido,
+.campoSegundoApellido,
+.campoTelefono,
+.campoCorreoElectronico {
+    display: grid;
+    gap: 0.5em;
+}
+.correoElectronicoAgregado,
+.selectCorreoElectronico,
+.selectTerminacionCorreo {
+    display: flex;
+    gap: 0.5em;
+}
+.inputPrimerNombre input,
+.inputSegundoNombre input,
+.inputPrimerApellido input,
+.inputSegundoApellido input,
+.inputTelefono input,
+.inputCorreoElectronico input {
+    width: 220px;
+}
+#prefijoTelefono {
+    width: 250px;
+    height: 27px;
+}
+#inputTelefono {
+    width: 270px;
+    height: 22px;
+    margin-top: 0.2em;
+}
+.inputCorreoElectronico input{
+    width: 280px;
+    height: 22px;
+    margin-top: 0.2em;
+}
+.selectCorreoElectronico label,
+.selectTerminacionCorreo label {
+    font-size: 20px;
+    margin-top: 0.2em;
+}
+.barraProgreso {
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+    margin-top: 0.5em;
+}
+.barrasProgreso {
+    display: flex;
+    gap: 0.5em;
+    margin-top: 0.1em;
+}
+.barrasProgreso button {
+    width: 40px;
+    height: 15px;
+    border: 0.1em solid black;
+    border-radius: 10px;
+}
+.opcionesBotones {
+    display: flex;
+    gap: 1em;
+}
+.campoBotonEnviarFormulario,
+.limpiarTodo {
+    display: flex;
+    justify-content: center;
+    margin-top: 1.5em;
+}
+#botonEnviarFormulario {
+    width: 400px;
+    padding: 1em 0;
+    border: 0.1em solid black;
+    border-radius: 10px;
+    background-color: rgb(26, 216, 26);
+}
+#botonLimpiarTodo {
+    padding: 1em 0;
+    width: 235px;
+    border: 0.1em solid black;
+    border-radius: 10px;
+    background-color: rgb(26, 216, 26);
+}
+#iconoPrimerNombre,
+#iconoSegundoNombre,
+#iconoPrimerApellido,
+#iconoSegundoApellido,
+#iconoTelefono,
+#iconoCorreoElectronico {
+    font-size: 20px;
+    margin-top: 0.20em;
+    margin-left: 0.2em;
+    color: rgb(26, 216, 26);
+}
+#verificacionPrimerNombre,
+#verificacionSegundoNombre,
+#VerificacionPrimerApellido,
+#verificacionSegundoApellido,
+#verificacionTelefono,
+#verificacionCorreoElectronico {
+    font-size: 20px;
+    margin-top: 0.20em;
+    margin-right: 0.2em;
+    color: lightgray;
+}
+.inputPrimerNombre input,
+.inputSegundoNombre input,
+.inputPrimerApellido input,
+.inputSegundoApellido input,
+.inputTelefono input,
+.inputCorreoElectronico input,
+.selectCorreoElectronico select,
+.selectTerminacionCorreo select,
+#prefijoTelefono {
+    border: 0;
+}
+.inputPrimerNombre input:focus,
+.inputSegundoNombre input:focus,
+.inputPrimerApellido input:focus,
+.inputSegundoApellido input:focus,
+.inputTelefono input:focus,
+.inputCorreoElectronico input:focus,
+.selectCorreoElectronico select:focus,
+.selectTerminacionCorreo select:focus,
+#prefijoTelefono {
+    border: 0;
+    outline: none;
+}
