@@ -1,0 +1,92 @@
+.headerInicial {
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5em;
+    background-color: #8ca832;
+}
+.subHeader {
+    display: flex;
+    justify-content: center;
+    padding: 1.5em;
+    background-color: #cad26f;
+    gap: 2.5em;
+    font-size: 18px;
+}
+.headerInicial img {
+    width: 35px;
+    height: 40px;
+}
+.headerInicial a,
+.subHeader a {
+    text-decoration: none;
+    color: black;
+}
+.tituloHeader {
+    display: flex;
+    justify-content: center;
+    gap: 0.4em;
+    font-size: 30px;
+}
+.iconosHeader { 
+    display: flex;
+    justify-content: center;
+    gap: 1.5em;
+}
+.buscadorLupa {
+    display: flex;
+    justify-content: center;
+    gap: 0.5em;
+    padding: 0.5em;
+    border: 0.1em solid black;
+    background-color: #cad26f;
+    border-radius: 10px;
+    box-shadow: 4px 4px 7px rgba(0, 0, 0, 0.5);
+}
+#textoBuscador { 
+    border: 0;
+    background-color: transparent;
+    color: black;
+}
+#textoBuscador:focus {
+    outline: none;
+    border: 0;
+}
+.iconoLupa {
+    margin-top: 0.3em;
+}
+.iconoUsuarioHeader,
+.iconoCorazonHeader,
+.iconoBurgerHeader {
+    margin-top: 0.45em;
+}
+#iconoUsuarioHeader,
+#iconoCorazonHeader,
+#iconoBurgerHeader {
+    font-size: 25px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+#iconoUsuarioHeader:hover,
+#iconoCorazonHeader:hover,
+#iconoBurgerHeader:hover {
+    text-shadow: 4px 4px 7px rgba(0, 0, 0, 0.8);
+}
+#inicioSubHeader,
+#sobreNosotrosSubHeader,
+#revistasSubHeader,
+#contactoSubHeader,
+#escribenosSubHeader,
+#registrateSubHeader,
+#primerTituloHeader,
+#segundoTituloHeader {
+    text-shadow: 4px 4px 7px rgba(0, 0, 0, 0.3);
+}
+#inicioSubHeader:hover,
+#sobreNosotrosSubHeader:hover,
+#revistasSubHeader:hover,
+#contactoSubHeader:hover,
+#escribenosSubHeader:hover,
+#registrateSubHeader:hover,
+#primerTituloHeader:hover,
+#segundoTituloHeader:hover {
+    text-shadow: 7px 7px 12px rgba(0, 0, 0, 0.6);
+}
