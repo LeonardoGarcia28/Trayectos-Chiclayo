@@ -1,3 +1,5 @@
+/** Main footer */
+
 .mainFooter {
     display: flex;
     justify-content: center;
@@ -6,9 +8,6 @@
     background-color: #b17b53;
     border-top: 0.1em solid black;
     margin-top: 5em;
-}
-.primerApartado {
-    width: 350px;
 }
 .mainFooter a {
     text-decoration: none;
@@ -21,12 +20,8 @@
 .mainFooter label {
     font-size: 17px;
 }
-.secondaryFooter {
-    display: flex;
-    justify-content: space-between;
-    padding: 1em 3em;
-    background-color: #8a5e3e;
-    border-top: 0.1em solid black;
+.primerApartado {
+    width: 350px;
 }
 .iconosEncuentranosEn i {
     font-size: 30px;
@@ -61,6 +56,11 @@
     display: grid;
     gap: 0.8em;
 }
+
+/** Quinta seccion
+ * ! Enviar correo
+ */
+
 .inputDejanosCorreo {
     border: 0.1em solid black;
     border-radius: 10px;
@@ -73,15 +73,15 @@
     background-color: transparent;
     color: white;
 }
+#correoIngresado:focus {
+    border: 0;
+    outline: none;
+}
 .inputCorreo {
     display: flex;
     justify-content: center;
     gap: 1em;
     margin-bottom: 1em;
-}
-#correoIngresado:focus {
-    border: 0;
-    outline: none;
 }
 #enviarCorreoBoton {
     border: 0.1em solid black;
@@ -90,6 +90,9 @@
     background-color: #8a5e3e;
     color: white;
 }
+
+/** Sombreados de iconos, titulos y subtitulos */
+
 #tituloRevistaTrayectos,
 #tituloNosotros,
 #tituloNuestrasEdiciones,
@@ -190,4 +193,14 @@
 .inputDejanosCorreo:hover,
 #enviarCorreoBoton:hover {
     box-shadow: 6px 6px 9px rgba(0, 0, 0, 0.8);
+}
+
+/** Secondary Footer */
+
+.secondaryFooter {
+    display: flex;
+    justify-content: space-between;
+    padding: 1em 3em;
+    background-color: #8a5e3e;
+    border-top: 0.1em solid black;
 }

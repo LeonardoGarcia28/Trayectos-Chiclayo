@@ -1,3 +1,7 @@
+/** Estilo Main para todas las paginas
+ * ! Mantiene las paginas centradas horizontal y verticalmente
+ */
+
 html, body {
     font-family: "Merriweather", serif;
     width: 100%;
