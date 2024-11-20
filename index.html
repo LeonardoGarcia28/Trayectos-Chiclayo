@@ -11,12 +11,33 @@
         <link rel="stylesheet" href="css/main.css">
         <link rel="stylesheet" href="css/modeselect.css">
         <link rel="icon" type="image/png" href="icon/trayectosChiclayoIcon.png">
-        <script src="js/main.js"></script>
+        <script src="./js/main.js"></script>
     </head>
     <body>
         <header>
             <div class="headerInicial">
                 <div class="izquierdaHeader">
+                    <div class="sidebar" id="sidebar">
+                        <div class="tituloSideBar">
+                            <h2>Revista Trayectos</h2>
+                        </div>
+                        <ul class="subtitulosSideBar">
+                            <li><a href="#">Inicio</a></li>
+                            <li><a href="#">Sobre Nosotros</a></li>
+                            <li><a href="#">Todas las Revistas</a></li>
+                            <li><a href="#">Contactanos</a></li>
+                            <li><a href="#">Escribenos</a></li>
+                            <li><a href="#">Registrate</a></li>
+                        </ul>
+                        <div class="sidebar-toggle" id="sidebarToggle">
+                            <div class="iconoBurgerHeader">
+                                <i class="fi fi-ss-menu-burger" id="iconoBurgerHeader" title="Mostrar mas"></i>
+                                <div class="flechaDerechaIconosIzquierda">
+                                    <i class="fi fi-rr-caret-right" id="flechaDerechaIconosIzquierda"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                     <div class="logoHeader">
                         <a href="index.html"><img src="./icon/trayectosChiclayoIcon.png" id="logoHeader" title="Logo Trayectos"></a>
                     </div>
@@ -62,32 +83,275 @@
                     </div>
                 </div>
                 <div class="iconosHeader">
-                    <div class="buscadorLupa" title="Buscador">
-                        <input type="text" id="textoBuscador" name="textoBuscador" placeholder="">
-                        <div class="iconoLupa">
-                            <i class="fi fi-bs-search" id="iconoLupa"></i>
+                    <div class="espaciadoIconosHeader">
+                    </div>
+                    <div class="iconoLupaHeader">
+                        <div class="flechaDesplegableLupa">
+                            <i class="fi fi-rr-caret-left" id="flechaDesplegableLupa"></i>
+                        </div>
+                        <i class="fi fi-bs-search" id="iconoLupaHeader" title="Lupa"></i>
+                    </div>
+                    <div class="iconoCampanaHeader">
+                        <i class="fi fi-ss-bell-notification-social-media" id="iconoCampanaHeader" title="Notificaciones"></i>
+                        <div class="flechaDesplegableNotificaciones">
+                            <i class="fi fi-rr-caret-down" id="flechaDesplegableNotificaciones"></i>
                         </div>
                     </div>
-                    <div class="iconoUsuarioHeader">
-                        <a href=""><i class="fi fi-ss-user" id="iconoUsuarioHeader" title="Usuario"></i></a>
+                    <div class="notificaciones-sidebar" id="notificacionesSidebar">
+                        <div class="notificacion-contenido">
+                            <div class="titulo-notificacion">
+                                <div class="iconoNotificacionGeneral">
+                                    <i class="fi fi-ss-bell-notification-social-media" id="iconoNotificacionGeneral"></i>
+                                </div>
+                                <div class="tituloNotificacionGeneral">
+                                    <strong>Notificaciones (5)</strong>
+                                </div>
+                            </div>
+                            <div class="notificacion-item">
+                                <div class="iconoInformacionNotificacion">
+                                    <i class="fi fi-rr-envelope"></i>
+                                </div>
+                                <div class="informacionNotificacion">
+                                    <div class="tituloNotificacion">
+                                        <strong>Titulo notificacion</strong>
+                                    </div>
+                                    <div class="mensajeNotificacion">
+                                        Tienes un nuevo mensaje!
+                                    </div>
+                                    <div class="fechaHoraNotifcacion">
+                                        11/11/2024
+                                        12:00 p.m
+                                    </div>
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="notificacion-item">
+                                <div class="iconoInformacionNotificacion">
+                                    <i class="fi fi-rr-messages"></i>
+                                </div>
+                                <div class="informacionNotificacion">
+                                    <div class="tituloNotificacion">
+                                        <strong>Titulo notificacion</strong>
+                                    </div>
+                                    <div class="mensajeNotificacion">
+                                        Tienes un nuevo mensaje!
+                                    </div>
+                                    <div class="fechaHoraNotifcacion">
+                                        11/11/2024
+                                        12:00 p.m
+                                    </div>
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="notificacion-item">
+                                <div class="iconoInformacionNotificacion">
+                                    <i class="fi fi-rr-comment-alt"></i>
+                                </div>
+                                <div class="informacionNotificacion">
+                                    <div class="tituloNotificacion">
+                                        <strong>Titulo notificacion</strong>
+                                    </div>
+                                    <div class="mensajeNotificacion">
+                                        Tienes un nuevo mensaje!
+                                    </div>
+                                    <div class="fechaHoraNotifcacion">
+                                        11/11/2024
+                                        12:00 p.m
+                                    </div>
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="notificacion-item">
+                                <div class="iconoInformacionNotificacion">
+                                    <i class="fi fi-rr-calendar-clock"></i>
+                                </div>
+                                <div class="informacionNotificacion">
+                                    <div class="tituloNotificacion">
+                                        <strong>Titulo notificacion</strong>
+                                    </div>
+                                    <div class="mensajeNotificacion">
+                                        Tienes un nuevo mensaje!
+                                    </div>
+                                    <div class="fechaHoraNotifcacion">
+                                        11/11/2024
+                                        12:00 p.m
+                                    </div>
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="notificacion-item">
+                                <div class="iconoInformacionNotificacion">
+                                    <i class="fi fi-rr-comment-user"></i>
+                                </div>
+                                <div class="informacionNotificacion">
+                                    <div class="tituloNotificacion">
+                                        <strong>Titulo notificacion</strong>
+                                    </div>
+                                    <div class="mensajeNotificacion">
+                                        Tienes un nuevo mensaje!
+                                    </div>
+                                    <div class="fechaHoraNotifcacion">
+                                        11/11/2024
+                                        12:00 p.m
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="notificacion-close" id="notificacionClose">
+                            <i class="fi fi-br-x"></i>
+                        </div>
                     </div>
+                    <div class="overlayNotificacion" id="overlayNotificacion"></div>
                     <div class="iconoCorazonHeader">
-                        <a href=""><i class="fi fi-ss-heart" id="iconoCorazonHeader" title="Favoritos"></i></a>
+                        <i class="fi fi-ss-heart" id="iconoCorazonHeader" title="Favoritos"></i>
+                        <div class="flechaDesplegableFavoritos">
+                            <i class="fi fi-rr-caret-down" id="flechaDesplegableFavoritos"></i>
+                        </div>
                     </div>
-                    <div class="iconoBurgerHeader">
-                        <a href=""><i class="fi fi-ss-menu-burger" id="iconoBurgerHeader" title="Mostrar mas"></i></a>
+                    <div class="favoritos-sidebar" id="favoritosSidebar">
+                        <div class="favoritos-contenido">
+                            <div class="titulo-favoritos">
+                                <div class="iconoFavoritosGeneral">
+                                    <i class="fi fi-ss-heart" id="iconoFavoritosGeneral"></i>
+                                </div>
+                                <div class="tituloFavoritosGeneral">
+                                    <strong>Favoritos (3)</strong>
+                                </div>
+                            </div>
+                            <div class="favoritos-item">
+                                <div class="iconoInformacionFavoritos">
+                                    <i class="fi fi-rr-envelope"></i>
+                                </div>
+                                <div class="informacionFavoritos">
+                                    <div class="tituloFavoritos">
+                                        <strong>Titulo favoritos</strong>
+                                    </div>
+                                    <div class="mensajeFavoritos">
+                                        Favorito Numero 01
+                                    </div>
+                                    <div class="agregadoFavoritos">
+                                        Agregado el: 11/11/2024
+                                        12:00 p.m
+                                    </div>
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="favoritos-item">
+                                <div class="iconoInformacionFavoritos">
+                                    <i class="fi fi-rr-envelope"></i>
+                                </div>
+                                <div class="informacionFavoritos">
+                                    <div class="tituloFavoritos">
+                                        <strong>Titulo favoritos</strong>
+                                    </div>
+                                    <div class="mensajeFavoritos">
+                                        Favorito Numero 02
+                                    </div>
+                                    <div class="agregadoFavoritos">
+                                        Agregado el: 11/11/2024
+                                        12:00 p.m
+                                    </div>
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="favoritos-item">
+                                <div class="iconoInformacionFavoritos">
+                                    <i class="fi fi-rr-envelope"></i>
+                                </div>
+                                <div class="informacionFavoritos">
+                                    <div class="tituloFavoritos">
+                                        <strong>Titulo favoritos</strong>
+                                    </div>
+                                    <div class="mensajeFavoritos">
+                                        Favorito Numero 03
+                                    </div>
+                                    <div class="agregadoFavoritos">
+                                        Agregado el: 11/11/2024
+                                        12:00 p.m
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="favoritos-close" id="favoritosClose">
+                            <i class="fi fi-br-x"></i>
+                        </div>
                     </div>
+                    <div class="overlayFavoritos" id="overlayFavoritos"></div>
+                    <div class="iconoUsuarioHeader">
+                        <i class="fi fi-ss-user" id="iconoUsuarioHeader" title="Usuario"></i>
+                        <div class="flechaDesplegableUsuario">
+                            <i class="fi fi-rr-caret-down" id="flechaDesplegableUsuario"></i>
+                        </div>
+                    </div>
+                    <div class="usuario-informacion-sidebar" id="usuarioInformacionSidebar">
+                        <div class="contenido-informacion-usuario">
+                            <div class="titulo-usuario">
+                                <h2>Informacion de Usuario</h2>
+                            </div>
+                            <div class="datos-usuario">
+                                <div class="imagen-usuario">
+                                    <img src="./img/fotosEquipo/martinPastor.jpg" id="">
+                                </div>
+                                <div class="informacion-usuario">
+                                    <p><strong>Nombre: </strong>John Doe</p>
+                                    <p><strong>Edad: </strong>35 años.</p>
+                                    <p><strong>Correo: </strong>john.doe@example.com</p>
+                                    <p><strong>Telefono: </strong>(+51) 992 626 581</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cerrar-informacion-usuario" id="cerrarInformacionUsuario">
+                            <i class="fi fi-br-x"></i>
+                        </div>
+                    </div>
+                    <div class="overlayUsuario" id="overlayUsuario"></div>
                 </div>
             </div>
             <div class="subHeader">
-                <a href="#imagenPrincipal"><label id="inicioSubHeader" title="Inicio">INICIO</label></a>
-                <a href="#textoSobreNosotros"><label id="sobreNosotrosSubHeader" title="Sobre Nosotros">SOBRE NOSOTROS</label></a>
-                <a href="#textoTodasEdiciones"><label id="revistasSubHeader" title="Revistas">REVISTAS</label></a>
-                <a href="#iconoRedireccionCorreo"><label id="contactoSubHeader" title="Contacto">CONTACTO</label></a>
-                <a href="#textoDejanosMensaje"><label id="escribenosSubHeader" title="Escribenos">ESCRIBENOS</label></a>
-                <a href="./html/contactanos/formularioContacto.html" target="_blank"><label id="registrateSubHeader" title="Registrate">REGISTRATE</label></a>
+                <nav>
+                    <ul class="menu-horizontal">
+                        <li><a href="#imagenPrincipal" id="inicioSubHeader" title="Inicio">INICIO</a></li>
+                        <li>
+                            <div class="redireccionFlecha">
+                                <a href="#textoSobreNosotros" id="sobreNosotrosSubHeader" title="Sobre Nosotros">SOBRE NOSOTROS</a>
+                                <i class="fi fi-rr-caret-down" id="flechaAbajo"></i>
+                            </div>
+                            <ul class="menu-vertical">
+                                <li><a href="./html/sobreNosotros/sobreNosotros.html#descripcionHistoria">Nuestra Historia</a></li>
+                                <li><a href="./html/sobreNosotros/sobreNosotros.html#descripcionMision">Nuestra Mision y Vision</a></li>
+                                <li><a href="./html/sobreNosotros/sobreNosotros.html#descripcionObjetivos">Nuestros Objetivos</a></li>
+                                <li><a href="./html/sobreNosotros/sobreNosotros.html#descripcionValores">Nuestros Valores</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <div class="redireccionFlecha">
+                                <a href="#textoTodasEdiciones" id="revistasSubHeader" title="Revistas">REVISTAS</a>
+                                <i class="fi fi-rr-caret-down" id="flechaAbajo"></i>
+                            </div>
+                            <ul class="menu-vertical">
+                                <li><a href="./html/revistaTrayectos/primeraEdicion.html">Primera Edicion</a></li>
+                                <li><a href="./html/revistaTrayectos/todasEdiciones.html">Todas las ediciones</a></li>
+                                <li><a href="./html/revistaTrayectos/ultimaEdicion.html">Ultima edicion</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <div class="redireccionFlecha">
+                                <a href="#iconoRedireccionCorreo" id="contactoSubHeader" title="Contacto">CONTACTANOS</a>
+                                <i class="fi fi-rr-caret-down" id="flechaAbajo"></i>
+                            </div>
+                            <ul class="menu-vertical">
+                                <li><a href="./html/contactanos/trabajaConNosotros.html">Trabaja con nosotros</a></li>
+                                <li><a href="./html/contactanos/faq.html">Preguntas frecuentes</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#textoDejanosMensaje" id="escribenosSubHeader" title="Escribenos">ESCRIBENOS</a></li>
+                        <li><a href="./html/contactanos/formularioContacto.html" id="registrateSubHeader" title="Registrate">REGISTRATE</a></li>
+                    </ul>
+                </nav>
             </div>
+            <script src="js/main.js"></script>
         </header>
+        <script src="./js/main.js"></script>
         <div class="imagenPrincipal">
             <img src="./img/imagenPrincipalTrayectos.jpg" id="imagenPrincipal">
         </div>

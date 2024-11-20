@@ -1,32 +1,64 @@
+/** General */
+
 .tituloEquipo,
 .tituloColaboradores,
-.tituloPrincipalesColaboradores,
 .tituloNuestrosColaboradores,
+.tituloPrincipalesColaboradores,
 .tituloIntegrantes {
     display: flex;
     justify-content: center;
     text-align: center;
-    margin-bottom: 2em;
+}
+.tituloPrincipalesColaboradores,
+.tituloIntegrantes {
+    margin-bottom: 4em;
+}
+.tituloNuestrosColaboradores {
+    margin: 3em;
 }
 .nuestroEquipo,
 .nuestrosPrincipalesColaboradores {
     display: grid;
-    gap: 2em;
-    margin-bottom: 2em;
+    gap: 3em;
 }
-.segundoNivel,
-.tercerNivel,
-.primerNivel,
-.primerNivelColaboradores,
-.segundoNivelColaboradores {
+
+/** Descripcion y titulo */
+
+.tituloEquipo {
+    margin-top: 5em;
+}
+.separadorTituloEquipo hr {
+    width: 500px;
+}
+.descripcionEquipo,
+.textoColaboradores {
     display: flex;
     justify-content: center;
-    gap: 5em;
+    margin: auto auto;
+    text-align: justify;
+    width: 800px;
+    margin: 2em auto;
+}
+
+/** Integrantes del equipo */
+
+.nuestroEquipo hr {
+    width: 170px;
+}
+.primerNivel,
+.segundoNivel {
+    display: flex;
+    justify-content: center;
+    gap: 3em;
     text-align: justify;
 }
 .recuadroPersona {
     justify-content: center;
-    width: 200px;
+    width: 280px;
+    border: 0.1em solid black;
+    border-radius: 10px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+    padding: 2em;
 }
 .tituloPersona {
     display: grid;
@@ -45,27 +77,37 @@
     display: flex;
     justify-content: center;
 }
-img {
-    width: 100px;
+.imagenPersona img {
+    width: 120px;
     height: 120px;
     border: 0.1em solid black;
     border-radius: 10px;
     margin-bottom: 1em;
-}
-.descripcionEquipo,
-.textoColaboradores {
-    display: flex;
-    justify-content: center;
-    margin: auto auto;
-    text-align: center;
-    width: 700px;
-    margin-bottom: 3em;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.6);
 }
 .datosPersona {
-    text-align: justify;
+    text-align: center;
+    margin-bottom: 2em;
+}
+
+/** Nuestro colaboradores */
+
+.tituloColaboradores {
+    margin-top: 3em;
+}
+.primerNivelColaboradores,
+.segundoNivelColaboradores {
+    display: flex;
+    justify-content: center;
+    gap: 5em;
+}
+.recuadroColaborador {
+    justify-content: center;
+    width: 280px;
 }
 .nuestrasListas {
     display: flex;
     justify-content: center;
     gap: 8em;
+    margin-bottom: 6em;
 }
